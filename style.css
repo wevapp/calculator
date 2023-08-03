@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+/* style for all div */
+#container > #row{
+    margin: 0px 9%;
+}
+/* style for all buttons */
+button{
+    height: 43px;
+    width: 48px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Comic Neue';
+    background-color: white;
+    border-radius: 5px;
+}button:hover{
+    border: 2px solid yellow;
+    transition: 0.3s;
+}
+/* style for main container */
+#container{
+    height: 330px;
+    width: 255px;
+    background-color: black;
+    position: relative;
+    top: 50px;
+    left: 10%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+/* style for display */
+#container > div > input{
+    height: 35px;
+    width: 85%;
+    margin: 20px 7.5% 10px 7.5%;
+    border: 2px solid black;
+    color: black;
+}
+/* Hidden darkmode button*/
+#dark{
+    display: none;
+}

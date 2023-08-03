@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="div-display">
+            <input type="text" id="display" style="text-align: right; font-weight: 800; font-size: 16px; background-color: whitesmoke;" disabled>
+        </div>
+        <div id="row">
+            <button id="dark"  onclick="dark()"><i class="fa fa-moon" aria-hidden="true" style="color: black;"></i></button>
+            <button id="light" onclick="light()"><i class="fa fa-sun" aria-hidden="true" style="color: orange;"></i></button>
+            <button onclick="clr()">CLR</button>
+            <button onclick="del()">←</button>
+        </div>
+        <div id="row">
+            <button onclick="operation('7')">7</button>
+            <button onclick="operation('8')">8</button>
+            <button onclick="operation('9')">9</button>
+            <button onclick="operation('+')">+</button>
+        </div>
+        <div id="row">
+            <button onclick="operation('4')">4</button>
+            <button onclick="operation('5')">5</button>
+            <button onclick="operation('6')">6</button>
+            <button onclick="operation('-')">-</button>
+        </div>
+        <div id="row">
+            <button onclick="operation('1')">1</button>
+            <button onclick="operation('2')">2</button>
+            <button onclick="operation('3')">3</button>
+            <button onclick="operation('*')">×</button>
+        </div>
+        <div id="row">
+            <button onclick="operation('.')">.</button>
+            <button onclick="operation('0')">0</button>
+            <button onclick="equals()">=</button>
+            <button onclick="operation('/')">÷</button>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
